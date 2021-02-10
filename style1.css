@@ -11,7 +11,7 @@ html {
     display: grid;
     height: 110vh;
     grid-template-columns:1fr ;
-    grid-template-rows:0.05fr 0.8fr 0.1fr ;
+    grid-template-rows:0.1fr 0.8fr 0.1fr ;
     grid-template-areas: "nav""main" "footer" ;
 }
 
