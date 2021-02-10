@@ -191,7 +191,7 @@ z-index:1;
   .was2{
     font-size: 2rem;
     
-    line-height: 1.2em;
+    line-height: 1.5em;
   }
   .was1{
     font-size: 2rem;
@@ -219,7 +219,7 @@ z-index:1;
     right: 0px;
   }
   .box2{
-   margin: auto;
+    margin: auto; 
   }
   span{
     font-size: 2rem;
