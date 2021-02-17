@@ -31,7 +31,7 @@ a:visited {
    }
 
  a:focus {
-    outline: none;
+    
     box-shadow: 0 0 0 7 px rgb(0, 255, 191);
     padding: 12px;
     background-color: rgb(0, 255, 191);
@@ -302,7 +302,6 @@ a:hover {
   
  }
  a:focus {
-  outline: none;
   box-shadow: 0 0 0 7 px rgb(0, 255, 191);
   padding: 12px;
   background-color: rgb(0, 255, 191);
@@ -317,7 +316,6 @@ a{
  
 
       button{
-        outline: none;
         border: none;
         background-color: #AFAFAF;
       }
@@ -325,7 +323,7 @@ a{
        background-color:  rgb(0, 255, 191);
      }
      button:focus{
-      outline: none;
+      
       background-color: rgb(0, 255, 191);
      }
 
