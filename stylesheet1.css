@@ -1,0 +1,364 @@
+*{
+    margin: 0;
+    padding: 0;}
+
+    html{
+        line-height: 1.6em;
+    }
+
+    .container{
+    display: grid;
+    height:100%;
+    
+    grid-template-columns:1fr ;
+    grid-template-rows:0.1fr 1.5fr 1.5fr 0.7fr 0.1fr;
+    grid-template-areas: "nav""main""review" "box3""footer" ;}
+
+
+p{font-family:Montserrat;
+    
+}
+/* link property start */
+a{
+    text-decoration: none;
+    color: black;}
+    
+
+a:focus{
+        font-weight: bold;
+        border: solid 5px;
+        border-color: #324AA4;
+        outline: #324AA4;}
+
+a:hover{ 
+    border: solid 3px #E9C2F8;
+    color: #FFF;
+    background-color: #324AA4;}
+    
+   
+    
+
+#active{
+    text-decoration:underline;
+    text-decoration-color: #324AA4;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 3px;
+    font-weight: bold;}
+
+
+
+a:visited{text-decoration: none;}
+
+/* link property end */
+
+/* nav property start */
+nav{
+    grid-area: nav;
+    font-family:Montserrat;
+    background-color: #fff;
+    font-size:16px;
+    display:flex;
+    align-items:center;
+    height:100px;
+    width:90%;
+    margin:0 auto;
+    justify-content: space-between;}
+
+.chat:hover{
+        border: solid 3px #E9C2F8;
+        background-color: #ffffff;}
+        
+          
+
+nav ul{
+    display: flex;}
+    
+
+nav li{
+    list-style-type: none;
+    padding: 0;}
+
+.navlistcenter{
+    padding: 5px 25px;}
+
+
+.contactandchat{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;}
+   
+
+.contactus{
+    padding: 10px 20px;
+    /* margin:0px 15px; */
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    font-family: Montserrat;}
+    
+/* nav property end */
+
+/* main property starts */
+main{
+    padding-top: 3%;
+    grid-area: main;
+    background-color: #E9FAFE;
+}
+
+.Customer{
+    grid-area: Customer;
+    display: grid;
+   
+  
+    height: 500px;
+    /* height:100%; */
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:0.8fr 1.5fr;
+    grid-template-areas: "h1 h1 h1""currentcustomer newcustomer emergencycustomer" ;
+place-items: center;}
+
+    h1{
+        grid-area: h1;
+        font-size: 30px;
+        font-family: Montserrat;
+        justify-self: center;
+        align-self: center;
+        
+    }
+    .currentcustomer{grid-area: currentcustomer;
+        display: grid;
+        width:350px;
+        max-width: 80%;
+        height: 250px;
+        border: #324AA4 solid 1px;
+        border-radius: 10px;
+        place-items: center;
+        justify-self: right;
+    }
+   
+    
+    .newcustomer{grid-area: newcustomer;
+        display: grid;
+        width: 350px;
+        max-width: 80%;
+        height: 250px;
+        border: #324AA4 solid 1px;
+        border-radius: 10px;
+        place-items: center;
+        
+    }
+    .emergencycustomer{grid-area: emergencycustomer;
+        display: grid;
+        width: 350px;
+        max-width: 80%;
+        height: 250px;
+        border: #324AA4 solid 1px;
+        border-radius: 10px;
+        place-items: center;
+        justify-self: left;
+    }
+    #p1{
+        font-size: 16px;
+        font-family: Montserrat;
+        
+        padding: 0px 10px;
+        max-width:90%;
+        text-align: justify;
+    }
+    #p2{
+        font-size: 16px;
+        font-family: Montserrat;
+        
+        padding: 0px 10px;
+        max-width:90%;
+        text-align: justify;
+    }
+    #p3{
+        font-size: 16px;
+        font-family: Montserrat;
+        
+        padding: 0px 10px;
+        max-width:90%;
+        text-align: justify;
+    }
+
+
+/* main property end */
+
+/* review property starts */
+
+.review{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    grid-area: review;
+    background-color:#d0e0eb;
+}
+
+.ABCreviews{
+    
+    display: grid;
+    height: 500px;
+    /* height:100%; */
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:0.8fr 1.5fr;
+    grid-template-areas: "h2 h2 h2""currentcustomer newcustomer emergencycustomer" ;
+place-items: center;}
+
+    h2{
+        grid-area: h2;
+        font-size: 30px;
+        font-family: Montserrat;
+        justify-self: center;
+        align-self: center;
+        
+    }
+    .currentcustomer{grid-area: currentcustomer;
+        position: relative;
+        display: grid;
+        width:350px;
+        max-width: 80%;
+        height: 250px;
+        border: #324AA4 solid 1px;
+        border-radius: 10px;
+        place-items: center;
+        justify-self: right;
+    }
+    .profile{
+        position: absolute;
+        top:-60px;
+        
+    }
+   
+    
+    .newcustomer{grid-area: newcustomer;
+        position: relative;
+        display: grid;
+        width: 350px;
+        max-width: 80%;
+        height: 250px;
+        border: #324AA4 solid 1px;
+        border-radius: 10px;
+        place-items: center;
+        
+    }
+    .emergencycustomer{grid-area: emergencycustomer;
+        position: relative;
+        display: grid;
+        width: 350px;
+        max-width: 80%;
+        height: 250px;
+        border: #324AA4 solid 1px;
+        border-radius: 10px;
+        place-items: center;
+        justify-self: left;
+    }
+    #p4{
+        font-size: 16px;
+        font-family: Montserrat;
+        
+        padding: 30px 10px;
+        max-width:90%;
+        text-align: justify;
+    }
+    #p5{
+        font-size: 16px;
+        font-family: Montserrat;
+        
+        padding: 30px 10px;
+        max-width:90%;
+        text-align: justify;
+    }
+    #p6{
+        font-size: 16px;
+        font-family: Montserrat;
+        
+        padding: 30px 10px;
+        max-width:90%;
+        text-align: justify;
+    }
+
+
+/* review property end */
+
+.box3{
+    grid-area: box3;
+    position: relative;
+}
+
+.Payment{
+    padding-top: 10px;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    grid-area: Payment;
+    display: grid;
+    background-color:  #e2e5fa;
+    
+    grid-template-columns:1fr ;
+    grid-template-rows:0.3fr 0.3fr 0.3fr;
+    grid-template-areas: "Convenience1""Convenience2" "Convenience3" ;
+place-items: center;
+text-align: center;}
+
+
+.Convenience1{
+    max-width: 90%;
+    grid-area:Convenience1 ;
+    font-family: Montserrat;}
+.Convenience2{
+    width: 800px;
+    max-width: 90%;
+    margin: 0 auto;
+    grid-area:Convenience2 ;
+    font-family: Montserrat;}
+.Convenience3{
+    max-width: 90%;
+    grid-area:Convenience3 ;
+    padding: 10px 20px;
+    /* margin:0px 15px; */
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border-color: black;
+    font-family: Montserrat;}
+
+
+    
+    footer{
+        padding-top: 3%;
+        grid-area: footer;
+        background-color: #FFF;
+        display: grid;
+        width: 90%;
+        height:100%;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:2fr;
+        grid-template-areas: "footerbox1 footerbox2 footerbox3 footerbox4 footerbox5 footerbox6" ;
+        margin: 0 auto;
+    font-family: Lato;}
+        
+        
+    
+    footer li{
+        list-style-type: none;
+        padding: 5px 0px 5px 30px;}
+    .footerbox1{grid-area: footerbox1;
+    align-content: center;
+    margin: 0 auto;}
+    .footerbox2{grid-area: footerbox2;}
+    .footerbox3{grid-area: footerbox3;}
+    .footerbox4{grid-area: footerbox4;}
+    .footerbox5{grid-area: footerbox5;}
+    .footerbox6{grid-area: footerbox6;
+        position: relative;}
+        .SNS{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        
